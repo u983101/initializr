@@ -67,11 +67,13 @@ public class GitProjectGenerationConfiguration {
 
 	private GitIgnore createGitIgnore() {
 		GitIgnore gitIgnore = new GitIgnore();
-		gitIgnore.getSts().add(".apt_generated", ".classpath", ".factorypath", ".project", ".settings", ".springBeans",
-				".sts4-cache");
+		// gitIgnore.getSts().add(".apt_generated", ".classpath", ".factorypath",
+		// ".project", ".settings", ".springBeans",
+		// ".sts4-cache");
 		gitIgnore.getIntellijIdea().add(".idea", "*.iws", "*.iml", "*.ipr");
-		gitIgnore.getNetBeans().add("/nbproject/private/", "/nbbuild/", "/dist/", "/nbdist/", "/.nb-gradle/");
-		gitIgnore.getVscode().add(".vscode/");
+		// gitIgnore.getNetBeans().add("/nbproject/private/", "/nbbuild/", "/dist/",
+		// "/nbdist/", "/.nb-gradle/");
+		// gitIgnore.getVscode().add(".vscode/");
 		return gitIgnore;
 	}
 
